@@ -350,8 +350,10 @@ app.listen(PORT, () => {
   console.log(`Server running on http://localhost:${PORT}`);
 });
 
-const data = readData(LOCATIONS_FILE);
-for (let i of readData(BOOKINGS_FILE)) {
-  console.log(data.find(u=>i.pickupLocationId ===u.locationId).locationName)
-  // console.log(i.pickupLocationId)
-}
+
+//For debugging purpose
+// const data = readData(LOCATIONS_FILE);
+// for (let i of readData(BOOKINGS_FILE)) {
+//   console.log(data.find(u=>i.pickupLocationId ===u.locationId).locationName)
+//   // console.log(i.pickupLocationId)
+// }
